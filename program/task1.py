@@ -10,6 +10,6 @@ if __name__ == "__main__":
 
     string = input("Введите строку: ")
 
-    count = len([i for i in string if i in vowels_all])
+    count = len([i for i in string.lower() if i in vowels_all])
 
     print("Количество гласных в строке:", count)
